@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Bootcamp - Racipe</title>
+</head>
+<body>
+    <header>Find A Recipe!</header>
+    <input type="text" placeholder="Write your ingredient"/>
+    <button onclick="getIngredient()">Send!</button>
+    <h5>In example: cheese, tomato, onion</h5>
+    <!-- rendering recipe with handlebars: -->
+    <script id="recipe-template" type="text/x-handlebars-template">
+      {{#each recipe}}
+        <div class="recipe">
+            <a href="{{href}}"><div id="title">{{title}}</div></a><br>
+            <img height="300px" width="300px" src="{{img}}">
+            <h4>ingredients:</h4>
+            <div>{{ingredients}}</div>
+        </div>
+        {{/each}}
+    </script>
+
+    <div id="recipe-container"></div>
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

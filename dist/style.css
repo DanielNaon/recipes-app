@@ -1,0 +1,65 @@
+body{
+    justify-content: center;
+    text-align: center;
+    background-color: #d8c3a5;
+    /* background-color: #f3d250; */
+}
+
+#recipe-container{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 20px;
+    color:#e3e2df;
+}
+.recipe{
+    font-family: 'Handlee', cursive;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #2d4159;
+}
+header{
+    font-family: 'Handlee', cursive;
+    font-size: 130px;
+    color: #2d4159;
+}
+#title{
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: #ffe400;
+}
+input{
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    height: 45px;
+    width: 80px;
+    background-color: #e7e7e7; 
+    color: black;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 9px;
+    transition-duration: 0.4s;
+    font-family: 'Handlee', cursive;
+  }
+  
+  button:hover {
+    background-color: #116466; 
+    color: white;
+  }
+  h5{
+    font-family: 'Handlee', cursive;
+    margin-right: 50px;  
+  }
