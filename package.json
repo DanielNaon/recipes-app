@@ -13,7 +13,7 @@
     "handlebars": "^4.7.6",
     "jquery": "^3.5.0",
     "request": "^2.88.2",
-    "urllib": "^2.34.2"
+    "urllib": "^2.38.1"
   }
 
 }
